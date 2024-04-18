@@ -6,13 +6,17 @@ body{
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     padding: 2%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    margin: 0;
 }
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 8%;
     width: 100%;
     border: 1px solid black;
     background-color: #e6fffd;
@@ -36,6 +40,8 @@ nav ul li {
     text-decoration: none;
     text-align: center;
     padding: 2px;
+    
+    
 }
 
 nav img {
@@ -67,14 +73,41 @@ header {
    margin: 2%; 
 }
 
+h2 {
+   text-align: center;
+}
+
 
 footer {
-   padding: 2%;
-   margin: 2%;
-   border: 1px solid black;
-   background-color: #e6fffd;
-   border-radius: 10px;
+   position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #e6fffd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+footer div {
+   margin: 2%;
+}
+
+.footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   transition: bottom 0.3s;
+}
+
+.footer.hidden {
+   bottom: -100px; 
+}
+
+
 
 
 
@@ -135,6 +168,16 @@ a:visited {
     border-radius: 10px;
  }
 
+ .blog {
+   display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #e6fffd;
+    border-radius: 10px;
+ }
+
  
 
 
@@ -142,8 +185,7 @@ a:visited {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #007bff; 
-    color: #fff; 
+    background-color: #007bff;  
     border: 1px solid #007bff; 
     border-radius: 5px; 
     cursor: pointer; 
