@@ -201,14 +201,20 @@ a:visited {
   }
 
   nav ul {
-    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 
   nav ul li {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+  }
+
+  nav ul li:nth-last-child(-n + 2) {
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
   }
 
   .footer {
