@@ -8,7 +8,7 @@ body {
   padding: 2%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -52,7 +52,7 @@ nav img {
   top: 0;
   left: 0;
   width: 100%;
-  transition: top 0.3s; /* Smooth transition effect */
+  transition: top 0.3s;
 }
 
 header {
@@ -68,6 +68,15 @@ h2 {
   text-align: center;
 }
 
+.certpic {
+  width: 80%;
+}
+.certpicdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -78,7 +87,7 @@ footer {
   background-color: #e6fffd;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 footer div {
@@ -115,7 +124,7 @@ a:visited {
   margin: 2%;
   border: 1px solid black;
   background-color: #e6fffd;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .skills {
@@ -125,7 +134,8 @@ a:visited {
   margin: 2%;
   border: 1px solid black;
   background-color: #e6fffd;
-  border-radius: 10px;
+  border-radius: 30px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 }
 
 .education {
@@ -135,7 +145,7 @@ a:visited {
   margin: 2%;
   border: 1px solid black;
   background-color: #e6fffd;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .projects {
@@ -143,7 +153,7 @@ a:visited {
   margin: 2%;
   border: 1px solid black;
   background-color: #e6fffd;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .blog {
@@ -153,7 +163,7 @@ a:visited {
   margin: 2%;
   border: 1px solid black;
   background-color: #e6fffd;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .button-link {
@@ -161,8 +171,8 @@ a:visited {
   padding: 10px 20px;
   text-decoration: none;
   background-color: #007bff;
-  border: 1px solid #007bff;
-  border-radius: 5px;
+  border: 3px solid #007bff;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
@@ -171,7 +181,7 @@ a:visited {
 
 .button-link:hover {
   background-color: #0056b3;
-  border-color: #0056b3;
+  border-color: #0e0f0f;
 }
 
 @media (min-width: 500px) {
