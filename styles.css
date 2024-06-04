@@ -158,6 +158,10 @@ layout so I'm going to stick with this current set up
   border-radius: 30px;
 }
 
+.logo {
+  width: 100px;
+}
+
 .button-link {
   display: inline-block;
   padding: 10px 20px;
@@ -169,6 +173,8 @@ layout so I'm going to stick with this current set up
   font-weight: bold;
   text-align: center;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  color: black;
+  
 }
 
 .button-link:hover {
